@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #0B1220;
+    --bg-secondary: #0F172A;
+    --bg-card: #131E33;
+    --bg-card-hover: #192640;
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-hover: rgba(45, 212, 191, 0.35);
+    --accent-teal: #2DD4BF;
+    --accent-teal-light: #34E0C4;
+    --accent-purple: #8B5CF6;
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+  }
+
+  .light {
+    --bg-primary: #F8FAFC;
+    --bg-secondary: #F1F5F9;
+    --bg-card: #FFFFFF;
+    --bg-card-hover: #F8FAFC;
+    --border-subtle: rgba(15, 23, 42, 0.08);
+    --border-hover: rgba(13, 148, 136, 0.4);
+    --accent-teal: #0D9488;
+    --accent-teal-light: #14B8A6;
+    --accent-purple: #7C3AED;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', 'Manrope', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom glow and backdrop effects */
+.teal-glow {
+  box-shadow: 0 0 35px -5px rgba(45, 212, 191, 0.25);
+}
+
+.teal-glow-subtle {
+  box-shadow: 0 0 20px -3px rgba(45, 212, 191, 0.12);
+}
+
+.teal-border-glow:hover {
+  border-color: rgba(45, 212, 191, 0.4);
+  box-shadow: 0 0 25px -4px rgba(45, 212, 191, 0.18);
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B1220;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2DD4BF;
+}
